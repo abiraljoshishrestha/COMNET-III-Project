@@ -1,0 +1,143 @@
+Compuware COMNET III  Release 2.5.2.814  Mon Jan 14 08:26:38 2019   PAGE     1
+
+                                    IBNBank                                     
+
+                         NODES: RECEIVED MESSAGE COUNTS                         
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+      RECEIVER            COUNT                   MESSAGE NAME
+______________________  __________  _________________________________________
+
+London.London Server        1512    ATM Source                               
+
+
+
+Compuware COMNET III  Release 2.5.2.814  Mon Jan 14 08:26:38 2019   PAGE     2
+
+                                    IBNBank                                     
+
+                           LINKS: CHANNEL UTILIZATION                           
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+                             FRAMES           TRANSMISSION DELAY (MS)       %
+LINK                   DELIVERED RST/ERR  AVERAGE    STD DEV    MAXIMUM   UTIL
+_____________________  _________ ______  _________  _________  _________  _____
+
+London.Token Ring          13508      0      0.147      0.055      0.368 3.3096
+Kathmandu.Token Ring       13740      0      0.158      0.067      0.368 3.6080
+Pokhara.Token Ring         13840      0      0.157      0.066      0.368 3.6198
+
+
+Compuware COMNET III  Release 2.5.2.814  Mon Jan 14 08:26:38 2019   PAGE     3
+
+                                    IBNBank                                     
+
+                         WAN CLOUDS: FRAME DELAY BY VC                          
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+CLOUD:                      FRAME DELAY (MS)               BURST SIZE (kb)
+  VC                      AVG      STD      MAX           AVG           MAX
+______________________  _______  _______  _______    ____________  ____________
+
+WAN Cloud
+  Kathmandu_London        12867     7360    25550              32            65
+  London_Kathmandu           23        0       23              12            27
+  Pokhara_London          12906     7360    25575              32            65
+  London_Pokhara             23        0       23              12            27
+
+
+Compuware COMNET III  Release 2.5.2.814  Mon Jan 14 08:26:38 2019   PAGE     4
+
+                                    IBNBank                                     
+
+                         WAN CLOUDS: FRAME COUNTS BY VC                         
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+CLOUD:                                    FRAMES / KILOBITS
+  VC:  FRAMES                    ACCEPTED                     DROPPED
+       KILOBITS            NORMAL          DE           NORMAL          DE
+______________________  ____________  ____________   ____________  ____________
+
+WAN Cloud               (TOTAL KILOBITS TRANSMITTED =         5349 )
+  Kathmandu_London Frm          3384             0              0             0
+                    kb          1592             0              0             0
+  London_Kathmandu Frm          3382             0              0             0
+                    kb          1082             0              0             0
+  Pokhara_London   Frm          3373             0              0             0
+                    kb          1597             0              0             0
+  London_Pokhara   Frm          3368             0              0             0
+                    kb          1078             0              0             0
+
+
+Compuware COMNET III  Release 2.5.2.814  Mon Jan 14 08:26:38 2019   PAGE     5
+
+                                    IBNBank                                     
+
+                         WAN CLOUDS: ACCESS LINK STATS                          
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+CLOUD:                            FRAMES            BUFFER (BYTES)       % UTIL
+  ACCESS LINK  (ENTRY)     ACCEPTED    DROPPED    MAX     AVG     STD          
+               (EXIT)                                                          
+________________________  __________  _________  ______  ______  ______  ______
+
+WAN Cloud
+  London Access    Entry        6750          0    N/A     N/A     N/A    73.13
+                    Exit       13464          0  399474  199562  115292   99.97
+  Pokhara Access   Entry        6753          0    N/A     N/A     N/A   100.00
+                    Exit        3368          0      80      15      19   36.49
+  KTM Access       Entry        6713          0    N/A     N/A     N/A   100.00
+                    Exit        3382          0      80      15      19   36.64
+
+
+Compuware COMNET III  Release 2.5.2.814  Mon Jan 14 08:26:38 2019   PAGE     6
+
+                                    IBNBank                                     
+
+                   MESSAGE + RESPONSE SOURCES: MESSAGE DELAY                    
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+ORIGIN / MSG SRC NAME:  MESSAGES                 MESSAGE DELAY 
+  DESTINATION LIST      ASSEMBLED      AVERAGE       STD DEV       MAXIMUM
+______________________  _________   ____________  ____________  ____________
+
+London.London Server / src Response Source:
+  ECHO                          0       0.000 MS      0.000 MS      0.000 MS
+Kathmandu.KTM ATM / src ATM Source:
+  London.London Server        241   30801.123 MS  15810.755 MS  57038.915 MS
+Kathmandu.Teller / src Teller source:
+  London.London Server          0       0.000 MS      0.000 MS      0.000 MS
+Pokhara.Teller / src Teller Source:
+  London.London Server          0       0.000 MS      0.000 MS      0.000 MS
+Pokhara.ATM PKR / src ATM Source:
+  London.London Server        252   29292.070 MS  16301.803 MS  57005.031 MS
+
+
+Compuware COMNET III  Release 2.5.2.814  Mon Jan 14 08:26:38 2019   PAGE     7
+
+                                    IBNBank                                     
+
+                 MESSAGE + RESPONSE SOURCES: MESSAGE DELIVERED                  
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+ORIGIN / MSG SRC NAME:  MESSAGES                 MESSAGE DELAY 
+  DESTINATION LIST      ASSEMBLED      AVERAGE       STD DEV       MAXIMUM
+______________________  _________   ____________  ____________  ____________
+
+London.London Server / src Response Source:
+  ECHO                          0       0.000 MS      0.000 MS      0.000 MS
+Kathmandu.KTM ATM / src ATM Source:
+  London.London Server        750   26085.906 MS  14906.291 MS  51928.960 MS
+Kathmandu.Teller / src Teller source:
+  London.London Server          0       0.000 MS      0.000 MS      0.000 MS
+Pokhara.Teller / src Teller Source:
+  London.London Server          0       0.000 MS      0.000 MS      0.000 MS
+Pokhara.ATM PKR / src ATM Source:
+  London.London Server        762   25689.975 MS  14702.056 MS  51377.938 MS
